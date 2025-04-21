@@ -61,7 +61,11 @@
 /* Custom cursor styles */
 html,
 body {
-  cursor: none;
+  cursor: auto !important;
+}
+
+a, button {
+  cursor: pointer !important;
 }
 
 @media (max-width: 768px) {
@@ -77,7 +81,7 @@ input,
 textarea,
 select,
 [role="button"] {
-  cursor: none;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -92,8 +96,7 @@ select,
 }
 
 .cursor-dot {
-  pointer-events: none;
-  z-index: 9999;
+  display: none;
 }
 
 /* Smooth scrolling */

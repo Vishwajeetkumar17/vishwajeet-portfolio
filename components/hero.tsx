@@ -21,11 +21,11 @@ export default function Hero() {
 
   // Fixed scroll functions
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
+    const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center items-center pt-16 pb-8 relative">
@@ -79,8 +79,7 @@ export default function Hero() {
               <Button
                 variant="outline"
                 className="border-emerald-500 text-emerald-600 hover:bg-emerald-50 dark:border-emerald-400 dark:text-emerald-400 dark:hover:bg-emerald-900/20 group"
-                onClick={() => scrollToSection("projects")}
-              >
+                onClick={() => scrollToSection("projects")}>
                 View My Work
                 <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
@@ -150,7 +149,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-emerald-500/20">
                 <Image
                   src="/images/profile.png"
-                  alt="Vishwajeet Kumar"
+                  alt="V"
                   width={320}
                   height={320}
                   className="w-full h-full object-cover"

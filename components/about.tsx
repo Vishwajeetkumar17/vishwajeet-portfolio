@@ -80,21 +80,48 @@ export default function About() {
                   </li>
                   <li className="flex items-center text-gray-700 dark:text-gray-300 group">
                     <Mail className="h-5 w-5 mr-3 text-emerald-600 transition-transform duration-300 group-hover:scale-110" />
-                    <span className="group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">
-                      vishwajitjee17@gmail.com
+                    <motion.a
+                      target="_blank"
+                      href="mailto:vishwajitjee17@gmail.com"
+                      className="text-gray-300 hover:text-emerald-500 transition-colors"
+                      aria-label="Email"
+                      whileHover={{ scale: 1, rotate: 2 }}
+                      whileTap={{ scale: 0.9 }}
+                      >
+                      <span className="group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                    vishwajitjee17@gmail.com
                     </span>
+                    </motion.a>
                   </li>
                   <li className="flex items-center text-gray-700 dark:text-gray-300 group">
                     <Github className="h-5 w-5 mr-3 text-emerald-600 transition-transform duration-300 group-hover:scale-110" />
-                    <span className="group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">
-                    https://github.com/Vishwajeetkumar17
+                    <motion.a
+                      target="_blank"
+                      href="https://github.com/Vishwajeetkumar17"
+                      className="text-gray-300 hover:text-emerald-500 transition-colors"
+                      aria-label="Github"
+                      whileHover={{ scale: 1, rotate: 2 }}
+                      whileTap={{ scale: 0.9 }}
+                      >
+                      <span className="group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                      Vishwajeetkumar17
                     </span>
+                    </motion.a>
                   </li>
                   <li className="flex items-center text-gray-700 dark:text-gray-300 group">
                     <Linkedin className="h-5 w-5 mr-3 text-emerald-600 transition-transform duration-300 group-hover:scale-110" />
-                    <span className="group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">
-                    https://www.linkedin.com/in/vishwajeet-kumar-vk17
+                    <motion.a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/vishwajeet-kumar-vk17/"
+                      className="text-gray-300 hover:text-emerald-500 transition-colors"
+                      aria-label="LinkedIn"
+                      whileHover={{ scale: 1, rotate: 2 }}
+                      whileTap={{ scale: 0.9 }}
+                      >
+                      <span className="group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                      vishwajeet-kumar-vk17
                     </span>
+                    </motion.a>
                   </li>
                 </ul>
               </CardContent>
