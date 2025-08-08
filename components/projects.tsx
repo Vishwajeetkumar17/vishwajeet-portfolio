@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { MessageSquare, Heart, Github, ExternalLink, ShoppingBagIcon } from "lucide-react"
+import { MessageSquare, Heart, Github, ExternalLink, ShoppingBagIcon, FilePlus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TechIcon } from "@/components/tech-icon"
 import {
@@ -20,6 +20,8 @@ import {
   SiMongodb,
   SiExpress,
   SiEjs,
+  SiHtml5,
+  SiCss3,
 } from "react-icons/si"
 
 export default function Projects() {
@@ -27,6 +29,39 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   const projects = [
+    {
+      title: "PDF Merger Website",
+      description: [
+        " Developed a responsive PDF merger web application using HTML, CSS, and JavaScript, enabling users to combine multiple PDF files into one with a custom page selection feature.",
+        " Implemented intuitive UI/UX design and client-side logic for seamless file upload, preview, and dynamic merging functionality without server-side dependencies.",
+      ],
+      technologies: [
+        { name: "HTML", icon: <SiHtml5 className="h-6 w-6 text-emerald-600" /> },
+        { name: "CSS", icon: <SiCss3 className="h-6 w-6 text-emerald-600" /> },
+        { name: "JavaScript", icon: <SiJavascript className="h-6 w-6 text-emerald-600" /> },
+      ],
+      icon: <FilePlus className="h-10 w-10 text-emerald-600" />,
+      image: "/images/pdf.png",
+      code: "https://github.com/Vishwajeetkumar17/pdf-merger",
+      demo: "https://pdf-merger-rosy-gamma.vercel.app/"
+    },
+    {
+      title: "Short Url Generator",
+      description: [
+        "Built a Short URL Generator web app featuring user authentication and individual profiles to manage personalized sets of shortened URLs.",
+        "Implemented ShortID for unique link generation, and dynamic UI rendering with EJS for a smooth user experience.A user-friendly short-notes website designed to help users quickly jot down, organize, and manage their important tasks efficiently.",
+      ],
+      technologies: [
+        { name: "Ejs", icon: <SiEjs className="h-6 w-6 text-emerald-600" /> },
+        { name: "CSS", icon: <SiCss3 className="h-6 w-6 text-emerald-600" /> },
+        { name: "Express", icon: <SiExpress className="h-6 w-6 text-emerald-600" /> },
+        { name: "MongoDB", icon: <SiMongodb className="h-6 w-6 text-emerald-600" /> },
+      ],
+      icon: <Heart className="h-10 w-10 text-emerald-600" />,
+      image: "/images/hom.png",
+      code: "https://github.com/Vishwajeetkumar17/short-url",
+      demo: "https://short-url-ia1o.onrender.com/"
+    },
     {
       title: "Electronics Shop",
       description: [
@@ -61,38 +96,6 @@ export default function Projects() {
       image: "/images/notes.png",
       code: "https://github.com/Vishwajeetkumar17/SaveYourData",
       demo: "https://save-your-data.vercel.app/"
-    },
-    {
-      title: "Restaurant Website",
-      description: [
-        "Responsive Frontend with React & Bootstrap: Developed a dynamic and responsive restaurant website using React for seamless component-based architecture and Bootstrap for consistent styling across devices.",
-        "Interactive UI for Menu & Booking: Implemented interactive features such as a live menu display and reservation form, leveraging React state management and Bootstrap components for an intuitive user experience.",
-      ],
-      technologies: [
-        { name: "React", icon: <SiReact className="h-6 w-6 text-emerald-600" /> },
-        { name: "Bootstrap", icon: <SiBootstrap className="h-6 w-6 text-emerald-600" /> },
-        { name: "JavaScript", icon: <SiJavascript className="h-6 w-6 text-emerald-600" /> },
-      ],
-      icon: <Heart className="h-10 w-10 text-emerald-600" />,
-      image: "/images/rest.png",
-      code: "https://github.com/Vishwajeetkumar17/restaurant-website",
-      demo: "https://restaurant-website-pi-flax.vercel.app/"
-    },
-    {
-      title: "Short Url Generator",
-      description: [
-        "Built a Short URL Generator web app featuring user authentication and individual profiles to manage personalized sets of shortened URLs.",
-        "Implemented ShortID for unique link generation, and dynamic UI rendering with EJS for a smooth user experience.A user-friendly short-notes website designed to help users quickly jot down, organize, and manage their important tasks efficiently.",
-      ],
-      technologies: [
-        { name: "Ejs", icon: <SiEjs className="h-6 w-6 text-emerald-600" /> },
-        { name: "Express", icon: <SiExpress className="h-6 w-6 text-emerald-600" /> },
-        { name: "MongoDB", icon: <SiMongodb className="h-6 w-6 text-emerald-600" /> },
-      ],
-      icon: <Heart className="h-10 w-10 text-emerald-600" />,
-      image: "/images/hom.png",
-      code: "https://github.com/Vishwajeetkumar17/short-url",
-      demo: ""
     },
   ]
 

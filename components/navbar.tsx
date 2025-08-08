@@ -28,8 +28,8 @@ export default function Navbar() {
   const handleDownload = () => {
     // Create a link to the CV file in the public folder
     const link = document.createElement("a")
-    link.href = "/Vishwajeet_Mar_CV.pdf"
-    link.download = "Vishwajeet_Mar_CV.pdf"
+    link.href = "/Vishwajeet_resume.pdf"
+    link.download = "Vishwajeet_resume.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

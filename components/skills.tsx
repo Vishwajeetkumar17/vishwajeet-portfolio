@@ -24,6 +24,9 @@ import {
   SiLinux,
   SiCplusplus,
   SiKotlin,
+  SiDocker,
+  SiJenkins,
+  SiKubernetes,
 } from "react-icons/si"
 import { DiJava } from "react-icons/di"
 
@@ -56,20 +59,24 @@ export default function Skills() {
       ],
     },
     {
+      title: "Tools",
+      icon: <Terminal className="h-6 w-6 text-emerald-600" />,
+      skills: [
+        { name: "Git", icon: <SiGit className="h-6 w-6 text-emerald-600" /> },
+        { name: "GitHub", icon: <SiGithub className="h-6 w-6 text-emerald-600" /> },
+        { name: "MS Office", icon: <span className="text-2xl text-emerald-600">📄</span> },      
+        { name: "Docker", icon: <SiDocker className="h-6 w-6 text-emerald-600" /> },
+        { name: "Jenkins", icon: <SiJenkins className="h-6 w-6 text-emerald-600" /> },
+        {name: "Kubernetes", icon: <SiKubernetes className="h-6 w-6 text-emerald-600" /> },
+      ],
+    },
+    {
       title: "Databases",
       icon: <Database className="h-6 w-6 text-emerald-600" />,
       skills: [
         { name: "MySQL", icon: <SiMysql className="h-6 w-6 text-emerald-600" /> },
         { name: "MongoDB", icon: <SiMongodb className="h-6 w-6 text-emerald-600" /> },
       ],
-    },
-    {
-      title: "Tools",
-      icon: <Terminal className="h-6 w-6 text-emerald-600" />,
-      skills: [
-        { name: "Git", icon: <SiGit className="h-6 w-6 text-emerald-600" /> },
-        { name: "GitHub", icon: <SiGithub className="h-6 w-6 text-emerald-600" /> },
-        { name: "MS Office", icon: <span className="text-2xl text-emerald-600">📄</span> },      ],
     },
     {
       title: "Soft Skills",

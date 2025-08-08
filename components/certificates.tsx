@@ -11,22 +11,28 @@ export default function Certificates() {
 
   const educationData = [
     {
+      topic: "Frontend Web Development with HTML, CSS and JavaScript",
+      intitution: "Infosys Springboard",
+      period: "May’25 - Jun’25",
+      detail: "Learned core Frontend Web Development with HTML, CSS and JavaScript."
+    },
+    {
       topic: "Data Structures And Algorithms",
       intitution: "Cipher Schools",
       period: "Jan’25 - Feb’25",
       detail: "Learned core data structures and algorithms including arrays, linked lists, trees, sorting, and searching with hands-on problem-solving practice."
     },
     {
-        topic: " Frontend Web Development with React",
-        intitution: "Gokboru Tech.",
-        period: " Jun’24 - Jul’24",
-        detail: "Built responsive web interfaces using React, JavaScript, and CSS; focused on components, state management, and API integration.",
-    },
-    {
         topic: "Cloud Computing",
         intitution: "NPTEL",
         period: "Aug’24 - Nov’24",
         detail: "Studied cloud models, virtualization, deployment strategies, and services like IaaS, PaaS, SaaS; gained hands-on experience with cloud platforms.",
+    },
+    {
+        topic: " Frontend Web Development with React",
+        intitution: "Gokboru Tech.",
+        period: " Jun’24 - Jul’24",
+        detail: "Built responsive web interfaces using React, JavaScript, and CSS; focused on components, state management, and API integration.",
     },
     {
         topic: "Azure AI Fundamentals",

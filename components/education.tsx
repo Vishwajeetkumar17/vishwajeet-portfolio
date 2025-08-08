@@ -14,7 +14,7 @@ export default function Education() {
       institution: "Lovely Professional University",
       degree: "B.Tech in Computer Science and Engineering",
       period: "Aug 2022 - Current",
-      details: "Overall CGPA (till 5th semester) 7.75",
+      details: "Overall CGPA (till 6th semester) 7.86",
       location: "Phagwara, Punjab",
     },
     {
